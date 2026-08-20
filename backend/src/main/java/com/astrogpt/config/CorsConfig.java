@@ -19,8 +19,11 @@ public class CorsConfig {
     public CorsWebFilter corsWebFilter() {
         CorsConfiguration corsConfig = new CorsConfiguration();
         
-        List<String> origins = Arrays.asList(allowedOrigins.split(","));
-        corsConfig.setAllowedOriginPatterns(origins);
+        List<String> origins = Arrays.asList(
+            "http://localhost:4200",
+            "https://astrogpt-frontend-blond.vercel.app"
+        );
+        corsConfig.setAllowedOrigins(origins);
         corsConfig.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
         corsConfig.setAllowedHeaders(Arrays.asList("*"));
         corsConfig.setAllowCredentials(true);
