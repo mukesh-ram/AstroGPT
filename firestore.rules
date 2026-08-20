@@ -1,0 +1,42 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Sessions collection: each session is identified by a random UUID
+    // Sessions are created client-side and can be read/written anonymously
+    match /sessions/{sessionId} {
+
+      // Allow read/write to the session document itself
+      allow read, write: if isValidSessionId(sessionId);
+
+      // Charts sub-collection
+      match /charts/{chartId} {
+        allow read, write: if isValidSessionId(sessionId);
+      }
+
+      // Messages sub-collection
+      match /messages/{messageId} {
+        allow read: if isValidSessionId(sessionId);
+        allow create: if isValidSessionId(sessionId)
+                      && isValidMessage(request.resource.data);
+        // No update/delete on messages (append-only)
+        allow update, delete: if false;
+      }
+    }
+  }
+
+  // Session IDs must be non-empty strings (UUIDs)
+  function isValidSessionId(sessionId) {
+    return sessionId is string && sessionId.size() > 10 && sessionId.size() < 100;
+  }
+
+  // Messages must have required fields and valid role
+  function isValidMessage(data) {
+    return data.keys().hasAll(['role', 'content', 'timestamp'])
+        && data.role in ['user', 'assistant']
+        && data.content is string
+        && data.content.size() > 0
+        && data.content.size() < 10000;
+  }
+}

@@ -1,0 +1,40 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.astrogpt:backend >------------------------
+[INFO] Building astrogpt-backend 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 71 source files with javac [debug parameters release 21] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[WARNING] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java:[7612,24] Double(java.lang.String) in java.lang.Double has been deprecated and marked for removal
+[WARNING] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java:[7613,24] Double(java.lang.String) in java.lang.Double has been deprecated and marked for removal
+[WARNING] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java:[7614,24] Double(java.lang.String) in java.lang.Double has been deprecated and marked for removal
+[WARNING] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java:[7615,24] Double(java.lang.String) in java.lang.Double has been deprecated and marked for removal
+[WARNING] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java:[7617,24] Double(java.lang.String) in java.lang.Double has been deprecated and marked for removal
+[WARNING] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java:[7618,24] Double(java.lang.String) in java.lang.Double has been deprecated and marked for removal
+[WARNING] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java:[7619,25] Double(java.lang.String) in java.lang.Double has been deprecated and marked for removal
+[WARNING] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java:[7620,25] Double(java.lang.String) in java.lang.Double has been deprecated and marked for removal
+[WARNING] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java:[7621,24] Double(java.lang.String) in java.lang.Double has been deprecated and marked for removal
+[WARNING] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java:[7622,26] Double(java.lang.String) in java.lang.Double has been deprecated and marked for removal
+[INFO] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java: Some input files use or override a deprecated API.
+[INFO] /D:/Projects/AstroGPT/backend/src/main/java/de/thmac/swisseph/SwissEph.java: Recompile with -Xlint:deprecation for details.
+[INFO] /D:/Projects/AstroGPT/backend/src/main/java/com/astrogpt/service/FirestoreService.java: D:\Projects\AstroGPT\backend\src\main\java\com\astrogpt\service\FirestoreService.java uses unchecked or unsafe operations.
+[INFO] /D:/Projects/AstroGPT/backend/src/main/java/com/astrogpt/service/FirestoreService.java: Recompile with -Xlint:unchecked for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  32.878 s
+[INFO] Finished at: 2026-08-19T21:44:39+05:30
+[INFO] ------------------------------------------------------------------------

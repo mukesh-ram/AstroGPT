@@ -1,0 +1,5 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.astrogpt:backend >------------------------
+[INFO] Building astrogpt-backend 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------

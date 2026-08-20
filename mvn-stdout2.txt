@@ -1,0 +1,40 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.astrogpt:backend >------------------------
+[INFO] Building astrogpt-backend 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.springframework.boot:spring-boot-starter-actuator:jar:3.3.2 is missing, no dependency information available
+[WARNING] The POM for com.google.genai:google-genai:jar:1.5.0 is missing, no dependency information available
+[WARNING] The POM for com.google.cloud:google-cloud-monitoring:jar:3.52.0 is missing, no dependency information available
+[WARNING] The POM for com.google.api.grpc:proto-google-cloud-monitoring-v3:jar:3.52.0 is missing, no dependency information available
+[WARNING] The POM for com.google.cloud.opentelemetry:shared-resourcemapping:jar:0.33.0 is missing, no dependency information available
+[WARNING] The POM for io.opentelemetry.contrib:opentelemetry-gcp-resources:jar:1.37.0-alpha is missing, no dependency information available
+[WARNING] The POM for com.google.cloud.opentelemetry:detector-resources-support:jar:0.33.0 is missing, no dependency information available
+[WARNING] The POM for org.checkerframework:checker-qual:jar:3.48.3 is missing, no dependency information available
+[WARNING] The POM for io.grpc:grpc-netty-shaded:jar:1.69.0 is missing, no dependency information available
+[WARNING] The POM for io.grpc:grpc-util:jar:1.69.0 is missing, no dependency information available
+[WARNING] The POM for io.grpc:grpc-stub:jar:1.69.0 is missing, no dependency information available
+[WARNING] The POM for io.grpc:grpc-googleapis:jar:1.69.0 is missing, no dependency information available
+[WARNING] The POM for io.grpc:grpc-xds:jar:1.69.0 is missing, no dependency information available
+[WARNING] The POM for io.grpc:grpc-services:jar:1.69.0 is missing, no dependency information available
+[WARNING] The POM for com.google.re2j:re2j:jar:1.7 is missing, no dependency information available
+[WARNING] The POM for io.grpc:grpc-rls:jar:1.69.0 is missing, no dependency information available
+[WARNING] The POM for com.google.cloud:google-cloud-firestore:jar:3.30.2 is missing, no dependency information available
+[WARNING] The POM for org.apache.httpcomponents.client5:httpclient5:jar:5.3.1 is missing, no dependency information available
+[WARNING] The POM for com.github.krishnact:swisseph:jar:v2.01.00-01 is missing, no dependency information available
+[WARNING] The POM for org.projectlombok:lombok:jar:1.18.34 is missing, no dependency information available
+[WARNING] The POM for org.springframework.boot:spring-boot-starter-test:jar:3.3.2 is missing, no dependency information available
+[WARNING] The POM for io.projectreactor:reactor-test:jar:3.6.8 is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.234 s
+[INFO] Finished at: 2026-08-19T21:27:57+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project backend: Could not resolve dependencies for project com.astrogpt:backend:jar:0.0.1-SNAPSHOT: Failed to collect dependencies at com.google.firebase:firebase-admin:jar:9.4.3 -> com.google.cloud:google-cloud-storage:jar:2.46.0 -> com.google.cloud.opentelemetry:exporter-metrics:jar:0.33.0: Failed to read artifact descriptor for com.google.cloud.opentelemetry:exporter-metrics:jar:0.33.0: Cannot access jitpack.io (https://jitpack.io) in offline mode and the artifact com.google.cloud:google-cloud-beyondcorp-appconnectors-bom:pom:0.49.0 has not been downloaded from it before. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException

@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: astrogpt-backend
+  main:
+    lazy-initialization: true    # reduces cold-start memory footprint by ~35%
+  # NOTE: Spring AI removed – using native google-genai SDK directly.
+  # API key is read from GEMINI_API_KEY environment variable in LLMPipelineService.
+  webflux:
+    cors:
+      allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:4200,https://astrogpt.vercel.app}
+
+# Native Google Gemini SDK config (read by LLMPipelineService constructor)
+# Set GEMINI_API_KEY environment variable – never hardcode here.
+spring.ai.google.genai.api-key: ${GEMINI_API_KEY:}
+
+app:
+  geocoding:
+    base-url: https://geocoding-api.open-meteo.com
+  firebase:
+    credentials-json: ${FIREBASE_CREDENTIALS_JSON:}    # full service-account JSON string
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:4200,https://astrogpt.vercel.app}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+
+logging:
+  level:
+    com.astrogpt: INFO
+    org.springframework.web: WARN

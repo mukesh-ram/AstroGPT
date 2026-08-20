@@ -1,0 +1,8 @@
+spring:
+  ai:
+    google:
+      genai:
+        api-key: test-key
+app:
+  firebase:
+    credentials-json: ""
