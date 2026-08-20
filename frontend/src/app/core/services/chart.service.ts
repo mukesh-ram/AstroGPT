@@ -5,7 +5,7 @@ import { NatalChart, BirthData, GeocodingResult } from '../models/natal-chart.mo
 
 @Injectable({ providedIn: 'root' })
 export class ChartService {
-  private readonly apiBase = 'http://localhost:8080/api';
+  private readonly apiBase = 'https://astrogpt-backend.onrender.com/api';
   private _chart = new BehaviorSubject<NatalChart | null>(null);
   chart$ = this._chart.asObservable();
   isCalculating = signal(false);

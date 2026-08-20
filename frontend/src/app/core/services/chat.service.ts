@@ -10,7 +10,7 @@ export class ChatService {
   currentStreamContent = signal('');
   sessionId = signal(this.generateSessionId());
 
-  private readonly apiBase = 'http://localhost:8080/api';
+  private readonly apiBase = 'https://astrogpt-backend.onrender.com/api';
 
   private generateSessionId(): string {
     return 'session_' + Math.random().toString(36).substring(2, 15);

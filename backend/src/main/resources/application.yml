@@ -22,7 +22,7 @@ app:
   firebase:
     credentials-json: ${FIREBASE_CREDENTIALS_JSON:}    # full service-account JSON string
   cors:
-    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:4200,https://astrogpt.vercel.app}
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:*}
 
 management:
   endpoints:
